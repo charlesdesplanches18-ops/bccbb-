@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,40 +6,41 @@
 
 @layer base {
   :root {
-    --background: 40 33% 97%;
-    --foreground: 215 35% 15%;
+    --background: 0 0% 100%;
+    --foreground: 220 10% 15%;
 
-    --card: 40 30% 95%;
-    --card-foreground: 215 35% 15%;
+    --card: 30 10% 97%;
+    --card-foreground: 220 10% 15%;
 
-    --popover: 40 33% 97%;
-    --popover-foreground: 215 35% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 15%;
 
-    --primary: 215 45% 22%;
-    --primary-foreground: 40 33% 97%;
+    --primary: 350 55% 28%;
+    --primary-foreground: 30 20% 97%;
 
-    --secondary: 35 30% 90%;
-    --secondary-foreground: 215 35% 20%;
+    --secondary: 220 8% 22%;
+    --secondary-foreground: 30 20% 97%;
 
-    --muted: 35 20% 92%;
-    --muted-foreground: 215 15% 40%;
+    --muted: 220 10% 95%;
+    --muted-foreground: 220 8% 40%;
 
-    --accent: 38 45% 85%;
-    --accent-foreground: 215 45% 22%;
+    --accent: 350 30% 92%;
+    --accent-foreground: 350 55% 28%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 35 20% 88%;
-    --input: 35 20% 88%;
-    --ring: 215 45% 22%;
+    --border: 220 10% 88%;
+    --input: 220 10% 88%;
+    --ring: 350 55% 28%;
 
     --radius: 0.75rem;
 
-    --warm: 38 55% 48%;
-    --warm-foreground: 40 33% 97%;
-    --sage-light: 215 20% 94%;
-    --cream: 40 40% 96%;
+    --warm: 350 45% 38%;
+    --warm-foreground: 30 20% 97%;
+    --sage-light: 220 10% 95%;
+    --cream: 30 15% 96%;
+    --graphite: 220 12% 18%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -50,8 +51,8 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    --font-display: 'Playfair Display', Georgia, serif;
-    --font-body: 'DM Sans', system-ui, sans-serif;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
   }
 
   .dark {
