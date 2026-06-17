@@ -1,18 +1,25 @@
 import { motion } from "framer-motion";
-import { Users } from "lucide-react";
+import { Award } from "lucide-react";
+import jefersonPhoto from "@/assets/jeferson-alves.webp";
 
 const lawyers = [
   {
     name: "Jeferson Alves",
     title: "Advogado Sênior",
-    specialties: "Direito do Trabalho, Direito Cível",
-    bio: "Especialista em direito trabalhista com experiência em litígios complexos, negociações extrajudiciais e consultoria empresarial.",
+    specialties: "Direito do Trabalho e Previdenciário",
+    experience: "6+ anos",
+    oab: ["RS 100.982", "SC 59.394-A"],
+    bio: "Especialista em direito trabalhista e previdenciário com experiência em litígios complexos, negociações extrajudiciais e consultoria empresarial. Atuação pautada por transparência e confiança.",
+    photo: jefersonPhoto,
   },
   {
     name: "Rafael Schmidt",
     title: "Advogado Sênior",
-    specialties: "Direito Cível, Direito Previdenciário",
-    bio: "Especialista em direito civil e previdenciário, com foco em contratos, planejamento sucessório e benefícios previdenciários.",
+    specialties: "Direito Cível e Previdenciário",
+    experience: "Experiência comprovada",
+    oab: ["SC - OAB ativa"],
+    bio: "Especialista em direito civil e previdenciário, com foco em contratos, planejamento sucessório e benefícios previdenciários. Atendimento humanizado e orientação clara.",
+    photo: null,
   },
 ];
 
@@ -46,7 +53,7 @@ const LawyersSection = () => (
         </p>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {lawyers.map((lawyer, i) => (
           <motion.div
             key={lawyer.name}
@@ -55,19 +62,49 @@ const LawyersSection = () => (
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="rounded-xl bg-background p-8 space-y-4 border border-border hover:border-primary/30 transition-colors"
+            className="rounded-xl bg-background overflow-hidden border border-border hover:border-primary/30 transition-colors"
           >
-            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10">
-              <Users className="w-6 h-6 text-primary" />
+            {/* Photo Section */}
+            {lawyer.photo ? (
+              <div className="relative h-80 bg-gradient-to-br from-primary/20 to-primary/5 overflow-hidden">
+                <img
+                  src={lawyer.photo}
+                  alt={lawyer.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ) : (
+              <div className="h-80 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
+                <div className="text-center">
+                  <Award className="w-12 h-12 text-primary/40 mx-auto mb-2" />
+                  <p className="text-muted-foreground text-sm">Foto em breve</p>
+                </div>
+              </div>
+            )}
+
+            {/* Info Section */}
+            <div className="p-8 space-y-4">
+              <div>
+                <h3 className="font-display text-2xl text-foreground">{lawyer.name}</h3>
+                <p className="text-primary font-body text-sm font-semibold">{lawyer.title}</p>
+              </div>
+
+              <div className="space-y-2">
+                <p className="text-muted-foreground font-body text-sm">
+                  <span className="font-semibold text-foreground">Especialidades:</span> {lawyer.specialties}
+                </p>
+                <p className="text-muted-foreground font-body text-sm">
+                  <span className="font-semibold text-foreground">Experiência:</span> {lawyer.experience}
+                </p>
+                <p className="text-muted-foreground font-body text-sm">
+                  <span className="font-semibold text-foreground">OAB:</span> {lawyer.oab.join(" · ")}
+                </p>
+              </div>
+
+              <p className="text-muted-foreground font-body leading-relaxed text-sm pt-2 border-t border-border">
+                {lawyer.bio}
+              </p>
             </div>
-            <div>
-              <h3 className="font-display text-2xl text-foreground">{lawyer.name}</h3>
-              <p className="text-primary font-body text-sm font-semibold">{lawyer.title}</p>
-            </div>
-            <p className="text-muted-foreground font-body text-sm">
-              <span className="font-semibold text-foreground">Especialidades:</span> {lawyer.specialties}
-            </p>
-            <p className="text-muted-foreground font-body leading-relaxed">{lawyer.bio}</p>
           </motion.div>
         ))}
       </div>
