@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Award } from "lucide-react";
 import jefersonPhoto from "@/assets/jeferson-alves.webp";
+import rafaelPhoto from "@/assets/rafael-schmidt.webp";
 
 const lawyers = [
   {
@@ -15,11 +16,11 @@ const lawyers = [
   {
     name: "Rafael Schmidt",
     title: "Advogado Sênior",
-    specialties: "Direito Cível e Previdenciário",
-    experience: "Experiência comprovada",
-    oab: ["SC - OAB ativa"],
-    bio: "Especialista em direito civil e previdenciário, com foco em contratos, planejamento sucessório e benefícios previdenciários. Atendimento humanizado e orientação clara.",
-    photo: null,
+    specialties: "Direito do Trabalho, Cível e Previdenciário",
+    experience: "6+ anos",
+    oab: ["RS 105.825", "SC 59.188-A", "RJ 231.840"],
+    bio: "Especialista em direito do trabalho, cível e previdenciário. Sempre zeloso pela ética profissional e pela resolução efetiva de conflitos. Atendimento humanizado e orientação clara.",
+    photo: rafaelPhoto,
   },
 ];
 
