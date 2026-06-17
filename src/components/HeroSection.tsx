@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-therapy.jpg";
+import heroImage from "@/assets/hero-law.jpg";
 
-const WHATSAPP_LINK = "https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre a terapia.";
+const WHATSAPP_LINK = "https://wa.me/5511999999999?text=Olá! Gostaria de uma consultoria jurídica.";
 
 const HeroSection = () => (
   <section className="relative min-h-[90vh] flex items-center overflow-hidden">
@@ -9,7 +9,7 @@ const HeroSection = () => (
     <div className="absolute inset-0">
       <img
         src={heroImage}
-        alt="Consultório de terapia acolhedor com luz natural"
+        alt="Escritório de advocacia elegante com biblioteca jurídica"
         className="w-full h-full object-cover"
         loading="eager"
       />
@@ -24,16 +24,16 @@ const HeroSection = () => (
         className="max-w-2xl space-y-6"
       >
         <p className="text-primary-foreground/80 font-body text-sm md:text-base tracking-widest uppercase">
-          Psicologia · Acolhimento · Transformação
+          Advocacia · Estratégia · Resultado
         </p>
 
         <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight text-primary-foreground text-balance">
-          Você não precisa continuar carregando tudo sozinho(a).
+          Você não precisa enfrentar essa questão jurídica sozinho(a).
         </h1>
 
         <p className="text-primary-foreground/85 text-lg md:text-xl font-body leading-relaxed max-w-xl">
-          Se a ansiedade, o esgotamento ou a sensação de estar travado(a) já fazem parte da sua rotina,
-          a terapia pode ser o espaço que faltava para você respirar.
+          Se um problema trabalhista, familiar ou contratual está tirando seu sono,
+          a orientação jurídica certa pode devolver sua tranquilidade e clareza.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -43,7 +43,7 @@ const HeroSection = () => (
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-8 py-4 text-primary-foreground font-body font-semibold text-base hover:opacity-90 transition-opacity"
           >
-            Quero entender se a terapia é pra mim
+            Quero conversar com um advogado
           </a>
           <a
             href="#como-funciona"
@@ -54,7 +54,7 @@ const HeroSection = () => (
         </div>
 
         <p className="text-primary-foreground/60 text-sm font-body">
-          Primeiro passo simples · Sem compromisso · Sigilo total
+          Primeira análise sem compromisso · Sigilo profissional · Atendimento humanizado
         </p>
       </motion.div>
     </div>

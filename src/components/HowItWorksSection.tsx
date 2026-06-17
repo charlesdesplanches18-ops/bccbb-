@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
-import { MessageCircle, CalendarCheck, Heart } from "lucide-react";
+import { MessageCircle, FileSearch, Scale } from "lucide-react";
 
 const steps = [
   {
     icon: MessageCircle,
     title: "Você entra em contato",
     description:
-      "Me manda uma mensagem simples. Sem formulários longos, sem burocracia. Pode ser pelo WhatsApp, no seu tempo.",
+      "Envie uma mensagem simples pelo WhatsApp contando sua situação. Sem formulários longos, sem juridiquês.",
   },
   {
-    icon: CalendarCheck,
-    title: "Conversamos sobre você",
+    icon: FileSearch,
+    title: "Analisamos seu caso",
     description:
-      "Na primeira sessão, você conta o que está sentindo. Eu ouço sem julgamento e entendemos juntos o que faz sentido pra você.",
+      "Na primeira reunião, ouvimos sua história com atenção e explicamos, em linguagem clara, quais são seus direitos e caminhos possíveis.",
   },
   {
-    icon: Heart,
-    title: "Começamos o caminho",
+    icon: Scale,
+    title: "Definimos a estratégia",
     description:
-      "Sessão a sessão, você vai reconhecendo padrões, se sentindo mais leve e encontrando suas próprias respostas.",
+      "Traçamos juntos o melhor caminho — judicial ou extrajudicial — e acompanhamos cada etapa até a resolução do seu caso.",
   },
 ];
 
@@ -42,14 +42,14 @@ const HowItWorksSection = () => (
         className="text-center max-w-2xl mx-auto mb-16"
       >
         <p className="text-primary font-body text-sm tracking-widest uppercase mb-3">
-          Simples e acolhedor
+          Simples e transparente
         </p>
         <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">
-          Como funciona a terapia?
+          Como funciona o atendimento?
         </h2>
         <p className="text-muted-foreground font-body text-lg">
-          Não precisa ter certeza do que sente. Não precisa ter um &quot;problema grave&quot;. 
-          Basta querer se entender melhor.
+          Você não precisa entender de leis nem ter todos os documentos em mãos.
+          Basta querer entender quais são seus direitos.
         </p>
       </motion.div>
 

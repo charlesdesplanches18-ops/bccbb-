@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
 
-const WHATSAPP_LINK = "https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre a terapia.";
+const WHATSAPP_LINK = "https://wa.me/5511999999999?text=Olá! Gostaria de uma consultoria jurídica.";
 
 const forYou = [
-  "Sente ansiedade que não para, mesmo quando tudo parece bem",
-  "Está emocionalmente esgotado(a) e sem energia",
-  "Tem dificuldade de concentração ou suspeita de TDAH",
-  "Sente que vive no automático, sem propósito",
-  "Quer se conhecer melhor e tomar decisões com mais clareza",
+  "Foi demitido(a) e suspeita que seus direitos não foram respeitados",
+  "Está enfrentando um processo de divórcio, pensão ou guarda",
+  "Precisa revisar ou elaborar um contrato com segurança",
+  "Tem dúvidas sobre herança, inventário ou planejamento sucessório",
+  "Foi vítima de um problema de consumo, dívida indevida ou cobrança abusiva",
 ];
 
 const notForYou = [
-  "Busca receita de medicamento (encaminho para psiquiatra)",
-  "Quer respostas prontas ou conselhos rápidos",
-  "Não está aberto(a) a olhar para dentro",
+  "Busca uma solução milagrosa ou garantia de resultado",
+  "Quer agir de má-fé ou contra a ética profissional",
+  "Não pretende fornecer as informações e documentos necessários",
 ];
 
 const values = [
-  { title: "Sigilo absoluto", desc: "Tudo que você compartilha fica entre nós. Ética profissional rigorosa." },
-  { title: "Sem julgamento", desc: "Aqui não existe certo ou errado. Existe o que você sente." },
-  { title: "Abordagem humana", desc: "Terapia baseada em evidências, mas com escuta genuína e empática." },
-  { title: "No seu ritmo", desc: "Cada pessoa tem seu tempo. Respeitamos o seu processo." },
+  { title: "Sigilo profissional", desc: "Tudo que você compartilha é protegido pelo segredo profissional da advocacia." },
+  { title: "Linguagem clara", desc: "Sem juridiquês. Explicamos cada passo de um jeito que você realmente entende." },
+  { title: "Ética acima de tudo", desc: "Atuação pautada pelo Código de Ética da OAB, com transparência total sobre prazos e honorários." },
+  { title: "Atendimento humanizado", desc: "Você não é um número de processo. Cada caso recebe atenção personalizada." },
 ];
 
 const TrustSection = () => (
@@ -38,7 +38,7 @@ const TrustSection = () => (
           Confiança e ética
         </p>
         <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">
-          Um espaço seguro, de verdade
+          Um atendimento jurídico de confiança
         </h2>
       </motion.div>
 
@@ -66,7 +66,7 @@ const TrustSection = () => (
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="font-display text-2xl text-foreground mb-6">A terapia é pra você se…</h3>
+          <h3 className="font-display text-2xl text-foreground mb-6">Podemos te ajudar se…</h3>
           <ul className="space-y-3">
             {forYou.map((item) => (
               <li key={item} className="flex items-start gap-3 text-foreground font-body">
@@ -83,7 +83,7 @@ const TrustSection = () => (
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="font-display text-2xl text-foreground mb-6">Talvez não seja o momento se…</h3>
+          <h3 className="font-display text-2xl text-foreground mb-6">Talvez não seja o caso se…</h3>
           <ul className="space-y-3">
             {notForYou.map((item) => (
               <li key={item} className="flex items-start gap-3 text-muted-foreground font-body">
@@ -104,10 +104,10 @@ const TrustSection = () => (
         className="text-center mt-16 p-10 rounded-2xl bg-accent/50"
       >
         <p className="font-display text-2xl text-foreground mb-3">
-          Dar o primeiro passo já é cuidar de si.
+          Resolver começa por uma conversa.
         </p>
         <p className="text-muted-foreground font-body mb-6">
-          Uma conversa simples, sem compromisso. Só pra você sentir se faz sentido.
+          Uma análise inicial sem compromisso. Entenda seus direitos antes de decidir qualquer coisa.
         </p>
         <a
           href={WHATSAPP_LINK}
@@ -115,7 +115,7 @@ const TrustSection = () => (
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-8 py-4 text-primary-foreground font-body font-semibold text-base hover:opacity-90 transition-opacity"
         >
-          Quero dar o primeiro passo
+          Quero analisar meu caso
         </a>
       </motion.div>
     </div>
